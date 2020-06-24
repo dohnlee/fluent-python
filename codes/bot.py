@@ -96,7 +96,9 @@ class Bot:
                 msg = '다음 발제자는 "{0}"입니다!!!>_<'.format(next_presentor)
                 self._send(ch, msg)
             elif msg == '!번개' or msg == '번개!':
-                self._slacker.files.upload(file_='../images/thunder.jpg', title='번개', channels=ch)
+                msg = '그딴거 없엉 이 집 넓다룡'
+                self._send(ch, msg)
+                # self._slacker.files.upload(file_='../images/thunder.jpg', title='번개', channels=ch)
 
     def _read(self):
         while True:
